@@ -16,6 +16,11 @@ public class Main {
             new RuntimeException(e);
         }
 
+        String hoge = null;
+        if (hoge.length() == 0){
+            return;
+        }
+
         // Press Ctrl+R or click the green arrow button in the gutter to run the code.
         for (int i = 1; i <= 5; i++) {
 
