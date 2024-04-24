@@ -11,6 +11,10 @@ public class Main {
         } catch (Exception e) {
             new RuntimeException(e);
         }
+        String hoge = null;
+        if (hoge.length() == 0) {
+            return;
+        }
     }
 
 }
