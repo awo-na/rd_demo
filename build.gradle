@@ -20,11 +20,14 @@ test {
 }
 
 spotbugs {
+    // Pull Request の変更ファイル以外に検出されたバグパターンにより
+    // CI が失敗してしまう事を回避するため、SpotBugs の失敗判定は無視
     ignoreFailures = true;
 }
 
 //ref:https://dev.to/kengotoda/spotbugs-supports-sarif-that-supports-integration-with-other-sast-tools-5fn
 spotbugsMain {
+    // 出力形式に sarif を指定
     reports {
         sarif {
             required = true
