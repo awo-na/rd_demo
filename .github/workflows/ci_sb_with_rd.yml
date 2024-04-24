@@ -28,4 +28,4 @@ jobs:
           REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: >
           cat ./build/reports/spotbugs/main.sarif 
-          | reviewdog -f sarif -reporter=github-pr-review -name run-reviewdog -tee
+          | reviewdog -f sarif -reporter=github-pr-check -name run-reviewdog -tee
