@@ -6,7 +6,11 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.printf("Hello and welcome!");
+        try {
+            System.out.printf("Hello and welcome!");
+        } catch (Exception e) {
+            new RuntimeException(e);
+        }
     }
 
 }
